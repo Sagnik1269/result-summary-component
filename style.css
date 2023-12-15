@@ -11,12 +11,13 @@ body{
     width: 52%;
     padding-bottom: 36%;
     border-radius: 25px;
-    box-shadow: 12.5px 12.5px 25px rgba(48, 59, 90, 0.2);
+    box-shadow: 12.5px 18px 20px rgba(48, 59, 90, 0.1);
     overflow: hidden;
 }
 
 .first-part{
     position: fixed;
+    display: inline;
     height: 100%;
     width: 50%;
     background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
@@ -72,8 +73,8 @@ body{
 .circle-bottom-text{
     position: relative;
     top: 20%;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 45px;
+    padding-right: 45px;
 
 }
 
@@ -87,25 +88,84 @@ body{
 
 .circle-bottom-desc{
     display: inline-block;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     color: rgba(208,198,255,255);
-    opacity: 0.7;
+    opacity: 0.8;
+}
+
+.second-part{
+    position: fixed;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+}
+
+.second-part-content{
+    padding: 9px 30px 30px 30px;
+}
+
+.second-header{
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 1px;
+}
+
+.summary-item{
+    position: relative;
+    height: 5.3vh;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 13px;
+    border-radius: 8px;
+    font-size: 14px;
+    padding-left: 2.2vh;
+    padding-right: 2.2vh;
+    font-weight: 800;
+}
+
+.starting-text{
+    display: flex;
+    font-size: 14px;
+}
+
+.item-icon{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.item-icon-text{
+    line-height: 20px;
 }
 
 
+.item-score{
+    padding-right: 0.5vh;
+}
 
+.item-total{
+    opacity: 50% ;
+}
 
+.continue-button{
+    width: 100%;
+    margin-top: 1.9dvh;
+    border: none;
+    border-radius: 25px;
+    background: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    height: 5dvh;
+    font-size: 14px;
+    font-weight: 500;
 
+}
 
-
-
-
-
-
-
-
-
+.continue-button:hover{
+    cursor: pointer;
+    background:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
 
 
 
@@ -121,4 +181,58 @@ body{
 
 .attribution a {
     color: hsl(228, 45%, 44%); 
+}
+
+
+@media(max-width: 700px){
+    body{
+        background: #661d1d;
+        margin: 0px;
+        border: none;
+        height: 809px;
+    }
+
+    .content{
+        position: static;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        height: 100%;
+        transform: translate(0%, 0%);
+        border: none;
+        margin: 0px;
+        padding-bottom: 0px;
+        border-radius: 0px;
+        align-items: center;
+    }
+
+    .first-part{
+        position: static;
+        display: block;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));;
+        top: 0%;
+        border-radius: 0px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        align-items: center;
+    }
+
+    .second-part{
+        position: static;
+        top: 0%;
+        width: 100%;
+        left: 0%;
+        height: auto;
+    }
+
+    .header-text{
+        top: 10px;
+        
+    }
+
+    .inner-circle{
+        
+    }
 }
