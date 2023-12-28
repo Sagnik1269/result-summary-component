@@ -178,10 +178,11 @@ body{
 
 .attribution{
     position: absolute;
-    bottom: 0dvh;
+    bottom: 0vh;
     width: 100%;
     font-size: 11px; 
     text-align: center; 
+    bottom: 0;
 }
 
 .attribution a {
@@ -194,6 +195,7 @@ body{
         border: none;
         height: 809px;
         flex-direction: column;
+        background: #fff;
     }
 
     .content{
@@ -259,8 +261,10 @@ body{
     }
 
     .attribution{
-        bottom: 0vh;
+        position: relative;
+        transform: translateY(-12px);
     }
+
 
 }
 
