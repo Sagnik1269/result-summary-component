@@ -258,6 +258,10 @@ body{
         border-radius: 30px;
     }
 
+    .attribution{
+        bottom: 0vh;
+    }
+
 }
 
 
