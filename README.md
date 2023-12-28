@@ -28,9 +28,9 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop](.screenshots/screenshot1.png)
+![Desktop](screenshots/screenshot1.png)
 
-![Mobile](.screenshots/screenshot2.png)
+![Mobile](screenshots/screenshot2.png)
 
 **Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
 
